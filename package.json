@@ -1,0 +1,49 @@
+{
+  "name": "ten-plates-templates",
+  "version": "0.1.0",
+  "description": "Create notebooks from mustache templates!",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/alexmorley/ten-plates-templates",
+  "bugs": {
+    "url": "https://github.com/alexmorley/ten-plates-templates/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Alexander Morley",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexmorley/ten-plates-templates.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib tsconfig.tsbuildinfo",
+    "prepare": "jlpm run clean && jlpm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^1.0.0",
+    "@jupyterlab/docmanager": "^1.0.0",
+    "@jupyterlab/filebrowser": "^1.0.0",
+    "@jupyterlab/mainmenu": "^1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "~3.5.2"
+  },
+  "sideEffects": [
+    "style/*.css"
+  ],
+  "jupyterlab": {
+    "extension": true
+  }
+}
