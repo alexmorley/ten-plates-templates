@@ -1,7 +1,11 @@
 # Ten Plates Templates [WIP]
+[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexmorley/ten-plates-live/master?urlpath=lab/tree/index.ipynb)
+
 ## Create Jupyter Notebooks in Jupyter Lab from templates
 
+
 This is currently in very early development. If you want a solution that is more fully developed check out @timkpaine's [JupyterLab Templates](https://github.com/timkpaine/jupyterlab_templates).
+You can try it out on Binder (see link at the top).
 
 If your happy to be a tester/things to break then carry on! You'll get a bunch of features like:
 

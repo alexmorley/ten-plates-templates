@@ -1,6 +1,6 @@
 {
   "name": "ten-plates-templates",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Create notebooks from mustache templates!",
   "keywords": [
     "jupyter",
@@ -27,7 +27,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "rimraf lib tsconfig.tsbuildinfo",
-    "prepare": "jlpm run clean && jlpm run build",
+    "prepare": "npm run clean && npm run build",
     "watch": "tsc -w"
   },
   "dependencies": {
